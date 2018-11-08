@@ -1,0 +1,16 @@
+var user = {
+  id: 22,
+  name: 'Rahul',
+  email: 'rahul@gmail.com'
+};
+
+function replacer(key, value) {
+  console.log(typeof value);
+  if (key === 'email') {
+    return undefined;
+  }
+  return value;
+}
+
+var userStr = JSON.stringify(user, replacer);
+// "{"id":22,"name":"Rahul"}"

@@ -1,0 +1,1 @@
+var obj = {name: 'Rakesh', marks: 76, distinction: true}
